@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@600&display=swap');
+body{background-image:url(https://images.alphacoders.com/736/736461.png);}
+/* สร้างคลาส */
+    .CO{color: #6710da; 
+    font-family:'IBM Plex Sans Thai Looped', sans-serif; font-size: 20;}
+    .fontchange{font-family: 'IBM Plex Sans Thai Looped', sans-serif; font-weight: 900; font-size: 20px;}
+/* สร้าง ID */
+#000{
+    font-family:'IBM Plex Sans Thai Looped', sans-serif; font-size: 20;}
+    .box{
+        width: 500px;
+        height: 500px;
+        color: rgb(0, 0, 0);
+        background-color:rgb(230, 99, 99);
+        text-align: center;
+        border: 5px dashed #0a1af3;
+        padding-top: 10px;
+        margin: 90px 25px;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box:hover{
+        background-color: rgba(81, 233, 182, 0.733);
+        box-shadow: 20px 20px #000000b7; 
+    }
+    .box:hover{
+        transform: scale(1.3);
+    }
+    #reset,#submit{
+    font-family:'IBM Plex Sans Thai Looped', sans-serif; font-size: 20;
+    background-color: #6710da;
+}
+    p.itatic{
+    font-style: italic;
+    font-weight: bold;
+ }
+    .container{
+        width: 475px;
+        height: 300px;
+        color: rgb(0, 0, 0);
+        background-color:rgb(2, 2, 2);
+        position: absolute;
+        right: 25;
+        top: 5;
+        
+ }
+ 
