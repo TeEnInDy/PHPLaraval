@@ -1,6 +1,9 @@
 <?php
+use App\Http\Controllers\MyControllers;
 use Illuminate\Support\Facades\Route;
-
+Route::get('/my-controllers', [MyControllers::class, 'index']);
+Route::get('/my-controllers2','App\Http\Controllers\MyControllers@index');
+Route::resource('/my-controllers4',MyControllers::class);
 Route::get('/', function () {
     return view('welcome');
 });

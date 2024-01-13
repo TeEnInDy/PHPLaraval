@@ -19,7 +19,7 @@ body {
     <div class="content">
         <h1>สูตรคูณ หรือ สูตรใคร</h1>
         <h1>ต้องการสูตรคูณแม่ไหนโปรดพิมพ์ใส่</h1>
-        <form method="post" action="/my-route">
+        <form method="post" action="/my-controllers4">
             @csrf
             <input type="text" name="multiplier">
             <button type="submit">ไปดูกันโล้ดด</button>
