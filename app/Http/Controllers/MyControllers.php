@@ -13,7 +13,7 @@ class MyControllers extends Controller
     function index(){
         $data = ['var_a' => 'Hello World'];
     $data['var_b'] ="Laraval";
-    return view('myfolder.mypage',$data);
+    return view('home');
         // return view('welcome');
     }
 
