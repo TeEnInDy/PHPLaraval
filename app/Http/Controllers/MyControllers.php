@@ -6,13 +6,10 @@ use Illuminate\Http\Request;
 
 class MyControllers extends Controller
 {
-    public $Myvarr = "HelloWorld!";
     function Construct(){
 
     }
     function index(){
-        $data = ['var_a' => 'Hello World'];
-    $data['var_b'] ="Laraval";
     return view('home');
         // return view('welcome');
     }

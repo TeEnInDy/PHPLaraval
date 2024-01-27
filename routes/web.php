@@ -19,3 +19,6 @@ Route::post('/my-route', function (Request $request) {
     $data['multiplier'] = $request->input('multiplier');
     return view('myroute', $data);
 });
+use App\Http\Controllers\C_titles;
+
+Route::resource('titles', C_titles::class);
