@@ -12,8 +12,14 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Titles</a></li>
                     </ol>
+                    <!-- ... (existing code) ... -->
+                    <div class="col-sm-6">
+                      <ol class="breadcrumb float-sm-right">
+                        <button type="submit" class="btn btn-danger"><a href="{{ route('logout') }}">Logout</a></button>
+                      </ol>
+                     </div><!-- /.col -->
+                    <!-- ... (existing code) ... -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
