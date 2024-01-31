@@ -22,3 +22,13 @@ Route::post('/my-route', function (Request $request) {
 use App\Http\Controllers\C_titles;
 
 Route::resource('titles', C_titles::class);
+
+Route::get('/login', [MyAuth::class,'login_view']);
+Route::get('/register', [MyAuth::class,'register_view']);
+Route::get('/logout', [MyAuth::class,'logout_process']);
+Route::post('/login', [MyAuth::class,'login_process']);
+Route::post('/register', [MyAuth::class,'register_process']);
+
+Route::middleware(['auth'])->group(function () {
+
+});
