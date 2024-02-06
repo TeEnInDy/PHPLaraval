@@ -177,11 +177,11 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ url('Asset/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2"
+                        <img src="{{ url('https://scontent.xx.fbcdn.net/v/t1.15752-9/423147634_771292241694629_1281031121357262340_n.png?stp=dst-png_p228x119&_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_eui2=AeGEsA_-QDuvZ7nFs8Gzk8fFDQC63xLWTxQNALrfEtZPFP7PhuGhLCcylAvxw5DQKLOxEUVEo1g1ZvYn-pqHjWTA&_nc_ohc=2A9i06K1zV0AX9VJPlX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRdOXPbDbdAmAZAqRkU6Fb9JW-EpxhOnLFFKuORVEAfDA&oe=65E8370B') }}" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
 
@@ -255,6 +255,13 @@
             <div class="p-3">
                 <h5>Title</h5>
                 <p>Sidebar content</p>
+                 <!-- ... (existing code) ... -->
+                 <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <button type="submit" class="btn btn-danger"><a href="{{ route('logout') }}">Logout</a></button>
+                    </ol>
+                   </div><!-- /.col -->
+                  <!-- ... (existing code) ... -->
             </div>
         </aside>
         <!-- /.control-sidebar -->
