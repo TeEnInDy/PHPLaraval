@@ -1,49 +1,126 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Javascript 101</title>
-</head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Welcome </title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/coming-sssoon.css" rel="stylesheet" />
+
+    <!--     Fonts     -->
+    <link href="Asset2/http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href='Asset2/http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/flags/US.png" />
+              English(US)
+              <b class="caret"></b>
+            </a>
+
+            </ul>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+              Like
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus-square"></i>
+              Plus
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest"></i>
+              Pin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main" style="background-image: url('images/video_bg.jpg')">
+    {{-- <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+      <source src="http://coming-sssoon.paperplane.io/video/time.webm" type="video/webm">
+      <source src="http://coming-sssoon.paperplane.io/video/time.mp4" type="video/mp4">
+      Video not supported --}}
+    </video>
+    <div class="cover black" data-color="black"></div>
+    <div class="container">
+      <h1 class="logo cursive">
+        ใส่แม่สูตรคูณ
+      </h1>
 
 <body>
-    <h1>Before</h1>
-    <h1 id="myh1">
-        <h1>Prepend</h1>Javascript<h1>Append</h1>
-    </h1>
-    <h1>After</h1>
-    <button onclick="alert('Hello World!')">Click Me!</button>
-    <input type="text" id="my_number" value="10">
-    <button onclick="myFunction()">submit number</button>
-    <br>
-    <button onclick="myFunction2()">submit my สูตรคูณ</button>
-    <br>
-    <table id="my_table">
-        <thead>
-                <td>#สูตรคูณแม่อะไรเอ่ยย</td>
-        </thead>
-        <tbody id="my_tbody">
-        </tbody>
-    </table>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            console.log("Hello World - document.ready")
-            console.log($('#myh1').text())
-            console.log($('#my_number').val())
-            $('#myh1').text("Javascript 101")
-            $('#my_number').val(100)
-        });
+   <div class="content">
+        <h4 class="motto"><button onclick="myFunction()">submit number</button>
+          <button onclick="alert('Hello World!')">Click Me!</button>
+          <br>
+          <button onclick="myFunction2()">submit my สูตรคูณ</button>
+          <br>
+          <center>
+            <table id="my_table">
+              <tbody id="my_tbody">
+              </tbody>
+            </table>
+          </center>
 
-        function myFunction2() {
-        let my_number = parseInt($('#my_number').val());
-        let my_code_tr = "";
-        let numberOfMultiples = 12;
-        $("#my_tbody").html("");
-        for (let i = 1; i <= numberOfMultiples; i++) {
-            let result = my_number * i;
-             my_code_tr += `<tr><td>${my_number} x ${i}</td><td>=${result}</td></tr>`;
-        }
-        $("#my_tbody").html(my_code_tr);
+
+          <input type="text" id="my_number" value="10">
+        </h4>
+        <div class="subscribe">
+          <h5 class="info-text">
+
+          </h5>
+          <div class="row">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script>
+              $(document).ready(function () {
+                console.log("Hello World - document.ready")
+                console.log($('#myh1').text())
+                console.log($('#my_number').val())
+                $('#myh1').text("Javascript 101")
+                $('#my_number').val(100)
+              });
+              function myFunction2() {
+                let my_number = parseInt($('#my_number').val());
+                let my_code_tr = "";
+                let numberOfMultiples = 12;
+                $("#my_tbody").html("");
+                for (let i = 1; i <= numberOfMultiples; i++) {
+                  let result = my_number * i;
+                  my_code_tr += `<tr><td>${my_number} x ${i}</td><td>=${result}</td></tr>`;
+                }
+                $("#my_tbody").html(my_code_tr);
 }
 
 
